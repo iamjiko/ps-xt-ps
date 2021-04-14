@@ -1,6 +1,9 @@
 {
   "name": "ps-xt-ps",
   "version": "0.1.0",
+  "engines": {
+    "node": "14.16.0"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve:ssr",
