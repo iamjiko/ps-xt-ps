@@ -1,0 +1,13 @@
+
+<h1>SpaceX Launch Programs</h1>
+<section class="ct-app">
+  <section class="ct-filters">
+    <ct-filters (missionsChanged)="missionsChangedHandler($event)"></ct-filters>
+  </section>
+  <section class="ct-missions">
+    <ct-missions [missions]="missions"></ct-missions>
+  </section>
+</section>
+<footer>
+  <div><b>Developed by </b><a href="https://www.linkedin.com/in/avirup-patra/">Avirup Patra</a></div>
+</footer>

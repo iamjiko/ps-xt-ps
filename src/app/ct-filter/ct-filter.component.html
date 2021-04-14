@@ -1,0 +1,26 @@
+<h2>Filters</h2>
+<div>
+    <h3>Launch Year</h3>
+    <div class="half-btn-container" *ngFor="let year of activeYears">
+        <button (click)="getYearlyMissions(year)" [className]="activeYear===year ? 'active' : ''" >{{year}}</button>
+    </div>
+</div>
+
+<div>
+    <h3>Successful Launch</h3>
+    <div class="half-btn-container">
+        <button (click)="getMissions('lau', true, $event)" [className]="launching==='y' ? 'active' : ''">True</button>
+    </div>
+    <div class="half-btn-container">
+        <button (click)="getMissions('lau', false, $event)" [className]="launching==='n' ? 'active' : ''">False</button>
+    </div>
+</div>
+<div>
+    <h3>Successful Landing</h3>
+    <div class="half-btn-container">
+        <button (click)="getMissions('lan', true, $event)" [className]="landing==='y' ? 'active' : ''">True</button>
+    </div>
+    <div class="half-btn-container">
+        <button (click)="getMissions('lan', false, $event)" [className]="landing==='n' ? 'active' : ''">False</button>
+    </div>
+</div>
